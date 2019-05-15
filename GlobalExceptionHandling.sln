@@ -3,9 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalExceptionHandling.WebApp", "src\GlobalExceptionHandling.WebApp\GlobalExceptionHandling.WebApp.csproj", "{EEC743EC-F783-43B7-9788-35341021101F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{75358D4C-A754-4741-A444-F339982096C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{482BDC55-A7F9-4293-961E-33FBB1FDB107}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B3320F73-8BF3-4F67-8E51-6F965F95C98A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		global.json = global.json
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalExceptionHandling.Tests.Integration", "test\GlobalExceptionHandling.Tests.Integration\GlobalExceptionHandling.Tests.Integration.csproj", "{6E1A8D3F-E09D-416A-9BCA-CE39B90273E3}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEC743EC-F783-43B7-9788-35341021101F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEC743EC-F783-43B7-9788-35341021101F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEC743EC-F783-43B7-9788-35341021101F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEC743EC-F783-43B7-9788-35341021101F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E1A8D3F-E09D-416A-9BCA-CE39B90273E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E1A8D3F-E09D-416A-9BCA-CE39B90273E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E1A8D3F-E09D-416A-9BCA-CE39B90273E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E1A8D3F-E09D-416A-9BCA-CE39B90273E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EEC743EC-F783-43B7-9788-35341021101F} = {75358D4C-A754-4741-A444-F339982096C9}
+		{6E1A8D3F-E09D-416A-9BCA-CE39B90273E3} = {482BDC55-A7F9-4293-961E-33FBB1FDB107}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EF991D8E-522E-46C2-83B0-95E644945447}
