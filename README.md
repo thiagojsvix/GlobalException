@@ -1,4 +1,4 @@
-# Gerenciamento Global de Exceptions com Middleware 
+# Gerenciamento Global de Exceptions com Middleware [![Build Status](https://dev.azure.com/thiagojs/Blog/_apis/build/status/GlobalException?branchName=master)](https://dev.azure.com/thiagojs/Blog/_build/latest?definitionId=4&branchName=master)
 Para o gerenciamento de `Exceptions` nós temos a nossa disposição o famoso [try-catch](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/try-catch) essa ferramenta é muito útil para podermos tratar as exceções especificas e também as genéricas. Porém há de concordar comigo, que um código cheio de blocos **try-catch** não é uma coisa muito estética e muito simples de ler, sem falar que o desenvolvedor pode esquecer de criar o bloco **try-catch** e uma exception ser lançada diretamente para o usuário.
 
 Para resolver isso podemos usar alguns mecanismos de tratamento global, e hoje iremos apresentar o gerenciamento por intermédio de um middleware.
