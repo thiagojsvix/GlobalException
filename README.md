@@ -7,7 +7,7 @@ Para resolver isso podemos usar alguns mecanismos de tratamento global, e hoje i
 
 Os [Middlewares](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/middleware/?view=aspnetcore-2.1) basicamente são componentes que definem o *pipeline de execução dos requests HTTP*, ou seja, todos os passos que seu request faz dentro da aplicação desde a sua recepção até a resposta. Eles são encadeados, então, um middleware pode executar outro através de delegates repassando o mesmo contexto da requisição. Quando uma resposta é gerada em algum passo dentro do pipeline, a execução volta para o passo anterior e assim em diante. Você pode criar trechos de código que executam antes ou depois do próximo passo do pipeline. Eles são configurados em ordem no método Configure da classe Startup, através da interface **`IApplicationBuilder`**.
 
-![Middleware](~/../contents/middleware.png)
+![Middleware](~/../contents/Middleware.png)
 
 ## Middlewares Customizados
 Observem abaixo que a classe de gerenciamento de Exceptions criada está implementando a interface `IMiddleware`, com essa interface torna-se fácil a criação de um **Middleware**.
